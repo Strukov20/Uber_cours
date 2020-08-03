@@ -8,6 +8,9 @@ nav
 	height: 50px
 	background-color: #212121
 
+.hamburger
+	display: none
+
 .menu
 	display: flex
 	justify-content: space-between
@@ -19,6 +22,9 @@ nav
 		color: #ffffff
 		font-size: 15px
 		font-weight: 300
+		&:hover
+			text-decoration: none
+			color: $ocean_color
   
 	&_item
 		border-right: 2px dotted black
@@ -79,6 +85,7 @@ nav
 		cursor: pointer
 		+btn_hover
 
+
 .promo
 	min-height: 800px
 	background: url('../img/bg-1.jpg') center (center / cover) no-repeat
@@ -89,7 +96,6 @@ nav
 		font-weight: 700
 		text-transform: uppercase
 		font-size: 60px
-		line-height: 60px
 		margin: 0
 		text-align: center
 
@@ -423,4 +429,7 @@ nav
 
 	&_mobile
 		margin-right: 23px
+
+.xs-visible
+	display: none	
 		
